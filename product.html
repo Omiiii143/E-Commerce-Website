@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website Single Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- -----------------------Nav Bar--------------------------- -->
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa-solid fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa-solid fa-times" id="close-btn" onclick="closemenu()" style="display: none;"></i>
+            <a href="index.html"><h1 class="logo">LOGO</h1></a>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-basket-shopping"></i> Cart</a></li>
+                <li><a href="#"><i class="fa-solid fa-user-plus"></i> Sign up</a></li>
+                <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ------------------------Single Product---------------------------- -->
+    <section class="single-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div id="product-slider" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/w/a/f/l-pk21sh09g-surhi-original-imah398aughuram5.jpeg?q=70" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://rukminim2.flixcart.com/image/400/400/xif0q/shirt/n/f/s/s-pk19sh1095h-surhi-original-imah7m7ybbngrgue.jpeg?q=70" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://rukminim2.flixcart.com/image/3600/3600/xif0q/shirt/7/p/n/m-pk19sh1095m-surhi-original-imahyp5zbf647ghj.jpeg?q=70&crop=false" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://rukminim2.flixcart.com/image/693/693/xif0q/shirt/z/3/e/s-ez-check-blue-rodeiz-original-imahfzu8h43zyque.jpeg?q=70&crop=false" class="d-block w-100">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#product-slider"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#product-slider"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    <!-- ------------------------------New Arrival Texts----------------------------------- -->
+                <div class="col-md-7">
+                    <p class="new-arrival text-center">NEW</p>
+                    <h2>Men's T Shirts V Neck - Blue Color</h2>
+                    <p>Product Code: IRSC2019</p>
+                    <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <p class="price">USD $15.00</p>
+                        <p><b>Availability:</b> In Stock</p>
+                        <p><b>Condition:</b> New</p>
+                        <p><b>Brand:</b> adidas</p>
+                        <label>Quantity</label>
+                        <input type="text" value="1">
+                        <button type="button" class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------------Product Description-------------------------- -->
+     <section class="product-description">
+        <div class="container">
+            <h6>Product Description</h6>
+            <p>Our products are fully original Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, dolor! 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, aliquam sit? 
+                Repellat distinctio sapiente, architecto nostrum officiis quod fugit impedit, possimus quos, 
+                dolorem harum reiciendis dignissimos? Porro accusamus iusto pariatur consequatur ducimus fugit quae, 
+                repudiandae dolore impedit nostrum ea? Tenetur perspiciatis veritatis est eaque assumenda et, voluptatem 
+                omnis fuga corporis?</p>
+                <p>Our products are fully original Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, dolor! 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, aliquam sit? 
+                Repellat distinctio sapiente, architecto nostrum officiis quod fugit impedit, possimus quos, 
+                dolorem harum reiciendis dignissimos? Porro accusamus iusto pariatur consequatur ducimus fugit quae, 
+                repudiandae dolore impedit nostrum ea? Tenetur perspiciatis veritatis est eaque assumenda et, voluptatem 
+                omnis fuga corporis?z</p>
+                <hr>
+        </div>
+        <div class="container">
+            <div class="title-box">
+                <h2>Similar</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/b/i/i/4xl-formal-shirt-metronaut-original-imah27td3xzegf9g.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Fitness Watch</h3>
+                        <h5>$40.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/l/p/g/xl-mens-staylist-chex-shirt-dbex-original-imah3hj4wgjq98dz.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Smart Watch</h3>
+                        <h5>$60.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/f/d/d/5xl-c301-b-green-dennis-lingo-original-imah47hjt4rdqfx7.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Formal Shoe</h3>
+                        <h5>$500.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/o/w/x/s-towel-aidan-paul-original-imah48xz3nnnfyqj.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Leather Watch</h3>
+                        <h5>$100.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+
+    <!-- ----------------------------Footer------------------------------- -->
+    <section class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Useful Links</h1>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p>Return Policy</p>
+                    <p>Discount Coupons</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Company</h1>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Career</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Follow Us On</h1>
+                    <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+                    <p><i class="fa-brands fa-youtube"></i> YouTube</p>
+                    <p><i class="fa-brands fa-linkedin"></i> Linkedin</p>
+                    <p><i class="fa-brands fa-twitter"></i> Twitter</p>
+                </div>
+                <div class="col-md-3 footer-image">
+                    <h1>Download App</h1>
+                    <img src="https://thumbs.dreamstime.com/b/app-store-155321571.jpg">
+
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Made with <i class="fa-solid fa-envelope"></i> bhatadeomkar23@gmail.com</p>
+        </div>
+    </section>
+
+
+
+    <script>
+        function openmenu() {
+            document.getElementById("side-menu").style.display = "block";
+            document.getElementById("menu-btn").style.display = "none";
+            document.getElementById("close-btn").style.display = "block";
+        }
+
+        function closemenu() {
+            document.getElementById("side-menu").style.display = "none";
+            document.getElementById("menu-btn").style.display = "block";
+            document.getElementById("close-btn").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

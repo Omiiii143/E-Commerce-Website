@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa-solid fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa-solid fa-times" id="close-btn" onclick="closemenu()" style="display: none;"></i>
+            <h1 class="logo">LOGO</h1>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-basket-shopping"></i> Cart</a></li>
+                <li><a href="#"><i class="fa-solid fa-user-plus"></i> Sign up</a></li>
+                <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="header">
+        <div class="side-menu" id="side-menu">
+            <ul>
+                <li>On Sale <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub Menu-1</li>
+                        <li>Sub Menu-1</li>
+                        <li>Sub Menu-1</li>
+                        <li>Sub Menu-1</li>
+                    </ul>
+                </li>
+                <li>Mobile <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub Menu-2</li>
+                        <li>Sub Menu-2</li>
+                        <li>Sub Menu-2</li>
+                        <li>Sub Menu-2</li>
+                    </ul>
+                </li>
+                <li>Computers <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub Menu-3</li>
+                        <li>Sub Menu-3</li>
+                        <li>Sub Menu-3</li>
+                        <li>Sub Menu-3</li>
+                    </ul>
+                </li>
+                <li>Books <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub Menu-4</li>
+                        <li>Sub Menu-4</li>
+                        <li>Sub Menu-4</li>
+                        <li>Sub Menu-4</li>
+                    </ul>
+                </li>
+                <li>Fitness <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub Menu-5</li>
+                        <li>Sub Menu-5</li>
+                        <li>Sub Menu-5</li>
+                        <li>Sub Menu-5</li>
+                    </ul>
+                </li>
+                <li>Baby Care <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub Menu-6</li>
+                        <li>Sub Menu-6</li>
+                        <li>Sub Menu-6</li>
+                        <li>Sub Menu-6</li>
+                    </ul>
+                </li>
+                <li>Magazines <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub Menu-7</li>
+                        <li>Sub Menu-7</li>
+                        <li>Sub Menu-7</li>
+                        <li>Sub Menu-7</li>
+                    </ul>
+                </li>
+                <li>Accessories <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub Menu-8</li>
+                        <li>Sub Menu-8</li>
+                        <li>Sub Menu-8</li>
+                        <li>Sub Menu-8</li>
+                    </ul>
+                </li>
+                <li>Videos and Games <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub Menu-9</li>
+                        <li>Sub Menu-9</li>
+                        <li>Sub Menu-9</li>
+                        <li>Sub Menu-9</li>
+                    </ul>
+                </li>
+                <li>Music and Movies <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub Menu-10</li>
+                        <li>Sub Menu-10</li>
+                        <li>Sub Menu-10</li>
+                        <li>Sub Menu-10</li>
+                    </ul>
+                </li>
+                <li>Homes and Kitchen <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub Menu-11</li>
+                        <li>Sub Menu-11</li>
+                        <li>Sub Menu-11</li>
+                        <li>Sub Menu-11</li>
+                    </ul>
+                </li>
+                <li>Grocery <i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Sub Menu-12</li>
+                        <li>Sub Menu-12</li>
+                        <li>Sub Menu-12</li>
+                        <li>Sub Menu-12</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div id="slider" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://cdn0.desidime.com/cdn-cgi/image/fit=contain,f=auto,onerror=redirect,w=1200,h=675,q=90/attachments/photos/738499/original/Top-10-Branded-Shirts-For-Men--1200x675.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.beyoung.in/blog/wp-content/uploads/2023/08/header-final.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://media.istockphoto.com/id/175005911/photo/balls-isolated-on-white.jpg?s=612x612&w=0&k=20&c=ukwcHSExlV405LwXRx1g0p_uRAovv7alOJHjgMISRwg=" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.mspimages.in/gear/wp-content/uploads/2022/06/5G-mobiles-under-Rs-20000.png" class="d-block w-100">
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!------------ Featured categories ---------->
+
+    <section class="featured-categories">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://filesblog.bizvibe.com/wp-content/webp-express/webp-images/uploads/2022/09/largest-sports-equipment-companies.jpg.webp" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_1280.jpg" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://www.asiamediajournal.com/wp-content/uploads/2020/09/Best-Mobile-Phones.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------On Sale Products-------------------- -->
+    <section class="on-sale">
+        <div class="container">
+            <div class="title-box">
+                <h2>On Sale</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/w/a/f/l-pk21sh09g-surhi-original-imah398aughuram5.jpeg?q=70"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Fitness Watch</h3>
+                        <h5>$40.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/9/k/t/l-hek589-dressar-original-imah4fkeu3m7yzy8.jpeg?q=70"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Smart Watch</h3>
+                        <h5>$60.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/x/q/m/m-5-alija-fashion-original-imahfwqdggznqgxx.jpeg?q=70"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Formal Shoe</h3>
+                        <h5>$500.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/f/t/q/l-592058-bewakoof-original-imah6wnzbftmzhvs.jpeg?q=70"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Leather Watch</h3>
+                        <h5>$100.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- -----------------New Products------------------ -->
+    <section class="new-products">
+        <div class="container">
+            <div class="title-box">
+                <h2>New Arrivals</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/track-pant/c/h/g/s-solid-gym-wear-track-pant-yazole-original-imah48xcnupdnpyz.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Fitness Watch</h3>
+                        <h5>$40.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/x/2/w/xxl-lst-cnz-wine-ethnic-trendz-original-imah3xqucavpp6kh.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Smart Watch</h3>
+                        <h5>$60.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/slipper-flip-flop/7/z/0/7-mrj2219-aadi-white-original-imagsu6zhs4jkhbh.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Formal Shoe</h3>
+                        <h5>$500.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://m.media-amazon.com/images/I/81QwZN8tIAL._AC_UL320_.jpg">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Leather Watch</h3>
+                        <h5>$100.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/17350726/2022/5/12/1fbba260-8584-4d2a-86fa-a5fa91ddad701652344722392-Puma-Men-White--Black-Colourblocked-IDP-Sneakers-87416523447-1.jpg">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Fitness Watch</h3>
+                        <h5>$40.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cargo/w/5/f/s-joger-2202-fashion2wear-original-imah6u6yx4yvbyvh.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Smart Watch</h3>
+                        <h5>$60.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/kvpklu80/dress/r/3/4/s-aa-0119-mauve-boho-long-dress-aayu-original-imag8k648mcxpeud.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Formal Shoe</h3>
+                        <h5>$500.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/i/l/m/7-8216472-7-bata-jet-black-original-imah45txqduudyts.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Leather Watch</h3>
+                        <h5>$100.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------------Sports kit imagaes------------------------------- -->
+    <section class="sports-products">
+        <div class="container">
+            <div class="title-box">
+                <h2>Sports </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://m.media-amazon.com/images/I/41nvB58-9aL._AC_UL320_.jpg">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Fitness Watch</h3>
+                        <h5>$40.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/ball/g/o/u/0-430-stortm-no-5-5-na-football-nivia-original-imagmbf6ssaff35z.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Smart Watch</h3>
+                        <h5>$60.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://m.media-amazon.com/images/I/61Ci3x+03YL._AC_UL320_.jpg">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Formal Shoe</h3>
+                        <h5>$500.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bottle/i/g/q/700-way-to-fitness-classic-bottle-700ml-shaker-with-whisk-ball-1-original-imah8eyqwu6rwbha.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Leather Watch</h3>
+                        <h5>$100.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/t/t/p/-original-imagz3zggzmxt2fy.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Fitness Watch</h3>
+                        <h5>$40.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/q/b/y/-original-imah6hy9hjgbc52a.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Smart Watch</h3>
+                        <h5>$60.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/board/2/4/r/foldable-magnetic-chess-board-game-set-for-kids-children-adults-original-imagpub2esrf97wa.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Formal Shoe</h3>
+                        <h5>$500.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/kwb07m80/kit/b/3/p/dsc-economy-full-size-ideal-for-15-21-years-complete-dsc-original-imag9yrqywzkuyuf.jpeg?q=70">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Leather Watch</h3>
+                        <h5>$100.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mobiles">
+        <div class="container">
+            <div class="title-box">
+                <h2>Mobiles</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/s/m/0/-original-imah37gw2wv2ayrf.jpeg?q=70"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Fitness Watch</h3>
+                        <h5>$40.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html"><img src="https://m.media-amazon.com/images/I/71lD7eGdW-L._AC_UY218_.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Smart Watch</h3>
+                        <h5>$60.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html"><img src="https://m.media-amazon.com/images/I/61SnaL4+EFL._AC_UY218_.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Formal Shoe</h3>
+                        <h5>$500.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html"><img src="https://m.media-amazon.com/images/I/61xJlx-3KDL._AC_UY218_.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Leather Watch</h3>
+                        <h5>$100.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="similar-mobiles">
+        <div class="container">
+            <div class="title-box">
+                <h2>Similar</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/s/i/u/-original-imah76jt64ffmwg4.jpeg?q=70"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Fitness Watch</h3>
+                        <h5>$40.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html"><img src="https://m.media-amazon.com/images/I/616wnQmPQ-L._AC_UY218_.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
+                        <h3>Smart Watch</h3>
+                        <h5>$60.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html"><img src="https://rukminim2.flixcart.com/image/312/312/ktketu80/mobile/2/y/o/iphone-13-mlpk3hn-a-apple-original-imag6vpyur6hjngg.jpeg?q=70"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Formal Shoe</h3>
+                        <h5>$500.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html"><img src="https://m.media-amazon.com/images/I/61Gl4860bcL._AC_UY218_.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Leather Watch</h3>
+                        <h5>$100.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ---------------------Website Features-------------------------- -->
+    <section class="website-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 feature-box">
+                    <img src="https://png.pngtree.com/png-vector/20221211/ourmid/pngtree-original-product-100-percent-guaranteed-logo-badge-png-image_6520036.png">
+                    <div class="feature-text">
+                        <p><b>100% Original Items</b>are available at company</p>
+                    </div>
+                </div>
+                <div class="col-md-3 feature-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxQPO5_7Car1I7cAfd9wsDKnvlRbgG8sy4bA&s">
+                    <div class="feature-text">
+                        <p><b>Return within 30 days</b>of recieving your order</p>
+                    </div>
+                </div>
+                <div class="col-md-3 feature-box">
+                    <img src="https://png.pngtree.com/png-clipart/20230106/original/pngtree-free-delivery-car-icon-element-png-image_8877401.png">
+                    <div class="feature-text">
+                        <p><b>Get free delivery for every</b>order on more than price</p>
+                    </div>
+                </div>
+                <div class="col-md-3 feature-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/10551/10551890.png">
+                    <div class="feature-text">
+                        <p><b>Pay Online through multiple</b>payment (card/net banking)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------Footer------------------------------ -->
+    <section class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Useful Links</h1>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p>Return Policy</p>
+                    <p>Discount Coupons</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Company</h1>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Career</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Follow Us On</h1>
+                    <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+                    <p><i class="fa-brands fa-youtube"></i> YouTube</p>
+                    <p><i class="fa-brands fa-linkedin"></i> Linkedin</p>
+                    <p><i class="fa-brands fa-twitter"></i> Twitter</p>
+                </div>
+                <div class="col-md-3 footer-image">
+                <h1>Download App</h1>
+                <img src="https://thumbs.dreamstime.com/b/app-store-155321571.jpg">
+
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Made with <i class="fa-solid fa-envelope"></i> bhatadeomkar23@gmail.com</p>
+        </div>
+    </section>
+    
+
+
+    <script>
+        function openmenu() {
+            document.getElementById("side-menu").style.display = "block";
+            document.getElementById("menu-btn").style.display = "none";
+            document.getElementById("close-btn").style.display = "block";
+        }
+
+        function closemenu() {
+            document.getElementById("side-menu").style.display = "none";
+            document.getElementById("menu-btn").style.display = "block";
+            document.getElementById("close-btn").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
