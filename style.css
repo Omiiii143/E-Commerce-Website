@@ -219,6 +219,10 @@ body{
     z-index: 1 !important;
 }
 
+.stri{
+    color: red;
+}
+
 @media only screen and (max-width: 980px){
     .slider{
         width: 100%;
